@@ -1,0 +1,25 @@
+{
+  "name": "celeste-salon-queue",
+  "version": "0.1.0",
+  "private": true,
+  "description": "CELESTE — Salon Queue Management System",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -n API,WEB -c green,cyan \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "nodemon backend/server.js",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "start": "node backend/server.js",
+    "build": "npm --prefix frontend run build",
+    "install:all": "npm install && npm --prefix frontend install"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.119.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9"
+  }
+}
