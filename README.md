@@ -1,6 +1,7 @@
 # CELESTE — Salon Queue Management System
 
 **Live demo:** https://celeste-jet.vercel.app/
+**Hosted On:** Vercel(Frontend + Backend)
 
 CELESTE is a full-stack Salon Queue Management System built as an MSc IT (Intro to Programming) academic project. It enables customers to join a salon queue online, book future appointments, select up to three services, choose a preferred stylist or **Any Available Stylist**, and track their live turn in **English** and **Gujarati**, while providing dedicated operational interfaces for Reception, Stylists, a Waiting Area TV Display, and the Salon Owner.
 
