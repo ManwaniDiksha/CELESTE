@@ -1,6 +1,20 @@
 # CELESTE — Salon Queue Management System
 
+**Live demo:** https://celeste-jet.vercel.app/
+
 CELESTE is a full-stack Salon Queue Management System built as an MSc IT (Intro to Programming) academic project. It enables customers to join a salon queue online, book future appointments, select up to three services, choose a preferred stylist or **Any Available Stylist**, and track their live turn in **English** and **Gujarati**, while providing dedicated operational interfaces for Reception, Stylists, a Waiting Area TV Display, and the Salon Owner.
+
+## Demo Access
+
+Use the following test-login credentials on the live demo (`https://celeste-jet.vercel.app/`) or when running locally:
+
+| Role | Route | Credentials | Notes |
+| :--- | :--- | :--- | :--- |
+| **Reception** | `/reception` | PIN: `2222` | Enter the shared operational PIN and click **Unlock Workspace**. |
+| **Stylist / Barber** | `/barber/:name` | PIN: `2222` | Replace `:name` with `aarav`, `meera`, `kabir`, `riya`, or `ananya` (e.g. `/barber/aarav`). |
+| **Salon Owner** | `/admin` | Email: `owner12@gmail.com`<br>Password: `1234567890` | Sign in with Supabase Auth on the Owner Settings login form. |
+
+> **Public & Customer Screens:** Home (`/`), Join Queue (`/join`), Appointments (`/appointments`), and Waiting Area TV Display (`/display`) require no login. Customer ticket tracking (`/status/:id`) uses the unique UUID link generated when joining the queue.
 
 ### Problem Statement
 
